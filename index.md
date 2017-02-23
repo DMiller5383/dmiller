@@ -4,12 +4,6 @@
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: home
 ---
-```css
-#button {
-	border: none;
-}
-```
-
-
-*Emphasize* _emphasize_
-**Strong** __Strong__
+  {% for post in site.posts %}
+    {% include post_item.html url=post.url title=post.title %}
+  {% endfor %}
