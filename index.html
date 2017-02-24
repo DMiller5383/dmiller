@@ -1,0 +1,13 @@
+---
+layout: home
+---
+<div class="row">
+  <div class="small-12 medium-6 columns">
+    {% for post in site.posts %}
+      {% include post_item.html url=post.url title=post.title %}
+    {% endfor %}
+  </div>
+  <div class="small-12 medium-4 columns">
+    {% include portrait.html %}
+  </div>
+</div>
