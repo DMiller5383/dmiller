@@ -1,13 +1,20 @@
 ---
 layout: home
 ---
-<div class="row">
-  <div class="small-12 medium-6 columns">
-    {% for post in site.posts %}
-      {% include post_item.html url=post.url title=post.title %}
-    {% endfor %}
+<div class="dmPostsContainer">
+  <div class="row">
+    <div class="small-12 medium-10 columns text-center">
+      {% for post in site.posts %}
+        {% include post_item.html post=post %}
+      {% endfor %}
+    </div>
+    <div class="dmSocialIconsHolder">
+      <div class="dmSocialIcons">
+        <img class="icon" src="http://placehold.it/40x40">
+        <img class="icon" src="http://placehold.it/40x40">
+        <img class="icon" src="http://placehold.it/40x40">
+
+      </div>
+    </div>
   </div>
-  <div class="small-12 medium-4 columns">
-    {% include portrait.html %}
-  </div>
-</div>
+</div><!-- end of dmPostsContainer -->
