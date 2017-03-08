@@ -3,18 +3,20 @@ layout: home
 ---
 <div class="dmPostsContainer">
   <div class="row">
-    <div class="small-12 medium-10 columns text-center">
+    <div class="small-12 medium-3 columns dmSiteInfo text-center">
+      <img src="http://placehold.it/100x100">
+      <p class="text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut</p>
+      <div class="dmSocialIcons text-center">
+
+      <img src="http://placehold.it/30x30">
+      <img src="http://placehold.it/30x30">
+      <img src="http://placehold.it/30x30">
+      </div>
+    </div>
+    <div class="small-12 medium-9 columns dmMainContent">
       {% for post in site.posts %}
         {% include post_item.html post=post %}
       {% endfor %}
-    </div>
-    <div class="dmSocialIconsHolder">
-      <div class="dmSocialIcons">
-        <img class="icon" src="http://placehold.it/40x40">
-        <img class="icon" src="http://placehold.it/40x40">
-        <img class="icon" src="http://placehold.it/40x40">
-
-      </div>
     </div>
   </div>
 </div><!-- end of dmPostsContainer -->

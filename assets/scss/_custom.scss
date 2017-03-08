@@ -1,18 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Aldrich|Russo+One|Source+Code+Pro|VT323');
 
-.dmSocialIconsHolder {
-  position: relative;
-  .dmSocialIcons {
-    position: fixed;
-    right: 0;
-    top: 100px;
-    img {
-      display: block;
-      padding-bottom: 10px;
+  header {
+    width: 100%;
+    background-color: map-get($foundation-palette, primary);
+    height: 10px;
+    .headerInner {
+      h2 {
+        margin: 10px 0;
+      }
     }
   }
-}
-
   .dmPostItemContainer {
     margin-bottom: 20px;
     .dmPostHeader {
@@ -23,6 +20,31 @@
     }
   }
 
+  .dmMainContent {
+  }
+  .dmSiteInfo {
+    border-right: 1px solid map-get($foundation-palette, primary);
+    img {
+      border-radius: 50px;
+    }
+    p {
+      margin-top: 14px;
+    }
+    .dmSocialIcons {
+      img {
+        display: inline-block;
+      }
+    }
+  }
+
   .dmPostsContainer {
     margin-top: 30px;
+  }
+  footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    .footerInner {
+      margin: 0 auto;
+    }
   }
