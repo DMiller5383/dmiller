@@ -3,20 +3,21 @@ layout: home
 ---
 <div class="dmPostsContainer">
   <div class="row">
-    <div class="small-12 medium-3 columns dmSiteInfo text-center">
-      <img src="http://placehold.it/100x100">
-      <p class="text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut</p>
-      <div class="dmSocialIcons text-center">
-
-      <img src="http://placehold.it/30x30">
-      <img src="http://placehold.it/30x30">
-      <img src="http://placehold.it/30x30">
-      </div>
-    </div>
-    <div class="small-12 medium-9 columns dmMainContent">
+    <div class="small-12 medium-9 columns dmMainContent float-right">
       {% for post in site.posts %}
         {% include post_item.html post=post %}
       {% endfor %}
+    </div>
+    <div class="small-12 medium-3 columns dmSiteInfo text-center float-right">
+      <img src="http://gravatar.com/avatar/f3081aceb37954243b6ca54823eaebd7s=100">
+      <p class="text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut</p>
+      <div class="dmSocialIcons text-center">
+
+      <i class="fa fa-github fa-2x" width="30" height="30" aria-hidden="true"></i>
+      <i class="fa fa-linkedin fa-2x" aria-hidden="true"></i>
+      <i class="fa fa-codepen fa-2x" aria-hidden="true"></i>
+      <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+      </div>
     </div>
   </div>
 </div><!-- end of dmPostsContainer -->

@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Aldrich|Russo+One|Source+Code+Pro|VT323');
 
+@include breakpoint(small) {
+
   header {
     width: 100%;
     background-color: map-get($foundation-palette, primary);
@@ -14,6 +16,7 @@
     margin-bottom: 22px;
     .dmPostHeader {
       font-size: 20px;
+      text-align: center;
     }
     .dmPostExcerpt {
       margin-top: 12px;
@@ -23,7 +26,6 @@
   .dmMainContent {
   }
   .dmSiteInfo {
-    border-right: 1px solid map-get($foundation-palette, primary);
     img {
       border-radius: 50px;
     }
@@ -31,14 +33,26 @@
       margin-top: 14px;
     }
     .dmSocialIcons {
-      img {
-        display: inline-block;
+      i {
+        padding-right: 12px;
       }
     }
   }
 
   .dmPostsContainer {
     margin-top: 30px;
+  }
+  footer {}
+}
+
+@include breakpoint(medium){
+  .dmPostItemContainer {
+    .dmPostHeader {
+      text-align: left;
+    }
+  }
+  .dmSiteInfo {
+    border-right: 1px solid map-get($foundation-palette, primary);
   }
   footer {
     position: fixed;
@@ -48,3 +62,4 @@
       margin: 0 auto;
     }
   }
+}
