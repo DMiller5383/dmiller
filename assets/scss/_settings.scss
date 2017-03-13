@@ -50,8 +50,8 @@ $global-font-size: 100%;
 $global-width: rem-calc(1200);
 $global-lineheight: 1.5;
 $foundation-palette: (
-  primary: #1779ba,
-  secondary: #767676,
+  primary: #c0b283,
+  secondary: #f4f4f4,
   success: #3adb76,
   warning: #ffae00,
   alert: #cc4b37,
@@ -59,11 +59,12 @@ $foundation-palette: (
 $light-gray: #e6e6e6;
 $medium-gray: #cacaca;
 $dark-gray: #8a8a8a;
+$darker-gray: #5E6A71;
 $black: #0a0a0a;
 $white: #fefefe;
-$body-background: $white;
-$body-font-color: $dark-gray;
-$body-font-family: 'Aldrich', sans-serif;
+$body-background: map-get($foundation-palette, secondary);
+$body-font-color: #373737;
+$body-font-family: 'Varela', sans-serif;
 $body-antialiased: true;
 $global-margin: 1rem;
 $global-padding: 1rem;

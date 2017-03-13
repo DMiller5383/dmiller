@@ -1,37 +1,13 @@
 ---
 layout: home
 ---
-<div class="dmPostsContainer">
-  <div class="row">
-    <div class="small-12 columns">
-      <h1>Daniel Miller</h1>
-      <hr/>
-    </div>
-  </div>
-  <div class="row">
-    <div class="small-12 medium-9 columns dmMainContent float-right">
-      {% for post in site.posts %}
-        {% include post_item.html post=post %}
-      {% endfor %}
-    </div>
-    <div class="small-12 medium-3 columns dmSiteInfo text-center float-right">
+
+    <div class="dmPostsContainer">
       <div class="row">
-        <div class="small-4 medium-12 columns dmPortrait">
-            <img src="http://gravatar.com/avatar/f3081aceb37954243b6ca54823eaebd7s=100">
-        </div>
-        <div class="small-8 medium-12 columns">
-          <p class="text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut</p>
+        <div class="small-12 medium-7 medium-offset-3 columns dmMainContent">
+          {% for post in site.posts %}
+            {% include post_item.html post=post %}
+          {% endfor %}
         </div>
       </div>
-      <div class="row">
-        <div class="small-12 columns">
-          <div class="dmSocialIcons text-center">
-            <i class="fa fa-github fa-2x" width="30" height="30" aria-hidden="true"></i>
-            <i class="fa fa-linkedin fa-2x" aria-hidden="true"></i>
-            <i class="fa fa-codepen fa-2x" aria-hidden="true"></i>
-            <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
-          </div>
-        </div>
-    </div>
-  </div>
-</div><!-- end of dmPostsContainer -->
+    </div><!-- end of dmPostsContainer -->

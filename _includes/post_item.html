@@ -1,19 +1,21 @@
 <div class="row dmPostItemContainer">
   <div class="small-12 columns">
+    <div class="dmPostDate">
+      {{ include.post.date | date: "%a, %b %d, %y" }}
+    </div>
     <div class="dmPostHeader">
       <a href="{{ include.url }}">{{ include.post.title }}</a>
     </div>
-    <div class="dmPostExcerpt">
-      {{include.post.excerpt}}
-    </div>
-    <!-- <div class="dmPostDate">
-      {{ include.post.date }}
-    </div>
     <div class="dmPostCategories">
-      {{include.post.categories}}
+      <!-- <p><span class="dmPostCategory">Javascript</span> <span class="dmPostCategory">ReactJs</span> <span class="dmPostCategory">WordPress</span></p> -->
+      <p>
+        <!--<i class="fa fa-tags" aria-hidden="true"></i> -->
+        {% for tag in include.post.tags %}
+            <!--<span class="dmPostCategory">{{ tag }}</span>-->
+        {% endfor %}
+      </p>
     </div>
-  </div>
-  <div class="small-12 medium-8 columns">
+  <!--<div class="small-12 medium-8 columns">
     <div class="dmPostExcerpt">
       {{include.post.excerpt}}
     </div> -->
