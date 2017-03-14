@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Aldrich|Russo+One|Source+Code+Pro|VT323');
 @import url('https://fonts.googleapis.com/css?family=Varela');
+@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=Share+Tech+Mono');
 
 @include breakpoint(small) {
 
@@ -24,7 +26,7 @@
         font-size: 22px;
         a {
           color: map-get($foundation-palette, primary);
-          font-weight: bold;
+          font-weight: lighter;
         }
       }
       .dmPostExcerpt {
@@ -56,6 +58,8 @@
       margin: 14px 12px;
     }
     .dmSocialIcons {
+      margin: 20px auto;
+
       i {
         padding-right: 12px;
       }

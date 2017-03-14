@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "Why I'm Learning TypeScript"
 date:   2017-02-22 07:40:17 -0500
 tags: Movies, iOS
 categories: jekyll update
